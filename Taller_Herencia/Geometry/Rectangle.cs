@@ -2,10 +2,13 @@
 
 namespace Geometry
 {
+    // Rectangle inherits from Square
     public class Rectangle : Square
     {
+        // Field for side B
         private double _b;
 
+        // Property for side B
         public double B
         {
             get { return _b; }
@@ -17,22 +20,28 @@ namespace Geometry
             }
         }
 
+        // Constructor with name, side A and side B
         public Rectangle(string name, double a, double b) : base(name, a)
         {
             B = b;
-            ValidateB();
+            ValidateB(); // Check if B is valid
         }
 
+        // Method to calculate area
         public override double GetArea()
         {
+            // Formula: A * B
             return A * B;
         }
 
+        // Method to calculate perimeter
         public override double GetPerimeter()
         {
+            // Formula: 2 * (A + B)
             return 2 * (A + B);
         }
 
+        // Validation method for side B
         private void ValidateB()
         {
             if (B <= 0)
@@ -40,4 +49,3 @@ namespace Geometry
         }
     }
 }
-
