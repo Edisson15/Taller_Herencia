@@ -18,12 +18,12 @@
         public Square(string name, double a) : base(name)
         {
             A = a;
-            ValidateA();
+            ValidateA(); 
         }
 
         public override double GetArea()
         {
-            return A * A;
+                    return A * A;
         }
 
         public override double GetPerimeter()

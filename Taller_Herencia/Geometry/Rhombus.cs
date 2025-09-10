@@ -33,15 +33,14 @@ namespace Geometry
         {
             D1 = d1;
             D2 = d2;
-            ValidateD1();
-            ValidateD2();
+            ValidateD1(); 
+            ValidateD2(); 
         }
 
         public override double GetArea()
         {
             return (D1 * D2) / 2;
         }
-
 
         public override double GetPerimeter()
         {

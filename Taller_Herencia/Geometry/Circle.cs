@@ -2,7 +2,7 @@
 
 namespace Geometry
 {
-    public class Circle : GeometricFigure
+     public class Circle : GeometricFigure
     {
         private double _r;
 
@@ -19,8 +19,8 @@ namespace Geometry
 
         public Circle(string name, double r) : base(name)
         {
-            R = r;
-            ValidateR();
+            R = r;          
+            ValidateR();   
         }
 
         public override double GetArea()
@@ -40,4 +40,3 @@ namespace Geometry
         }
     }
 }
-

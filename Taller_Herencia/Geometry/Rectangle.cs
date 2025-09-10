@@ -2,7 +2,7 @@
 
 namespace Geometry
 {
-    public class Rectangle : Square
+        public class Rectangle : Square
     {
         private double _b;
 
@@ -20,7 +20,7 @@ namespace Geometry
         public Rectangle(string name, double a, double b) : base(name, a)
         {
             B = b;
-            ValidateB();
+            ValidateB(); 
         }
 
         public override double GetArea()
@@ -30,7 +30,7 @@ namespace Geometry
 
         public override double GetPerimeter()
         {
-            return 2 * (A + B);
+             return 2 * (A + B);
         }
 
         private void ValidateB()
@@ -40,4 +40,3 @@ namespace Geometry
         }
     }
 }
-

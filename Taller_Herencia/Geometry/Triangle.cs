@@ -34,8 +34,8 @@ namespace Geometry
         {
             C = c;
             H = h;
-            ValidateC();
-            ValidateH();
+            ValidateC(); 
+            ValidateH(); 
         }
 
         public override double GetArea()

@@ -21,7 +21,7 @@ namespace Geometry
             : base(name, a, b)
         {
             H = h;
-            ValidateH();
+            ValidateH(); 
         }
 
         public override double GetArea()
