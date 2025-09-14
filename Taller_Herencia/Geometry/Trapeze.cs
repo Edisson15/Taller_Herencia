@@ -1,7 +1,9 @@
 ﻿namespace Geometry
 {
+    
     public class Trapeze : Triangle
     {
+        
         private double _d;
 
         public double D
@@ -24,11 +26,13 @@
 
         public override double GetArea()
         {
+            
             return (B + D) * H / 2;
         }
 
         public override double GetPerimeter()
         {
+            
             return A + B + C + D;
         }
 

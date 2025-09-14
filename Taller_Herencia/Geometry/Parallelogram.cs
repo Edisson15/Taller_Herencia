@@ -2,10 +2,13 @@
 
 namespace Geometry
 {
+    
     public class Parallelogram : Rectangle
     {
+        
         private double _h;
 
+        
         public double H
         {
             get { return _h; }
@@ -17,6 +20,7 @@ namespace Geometry
             }
         }
 
+        
         public Parallelogram(string name, double a, double b, double h)
             : base(name, a, b)
         {
@@ -24,16 +28,21 @@ namespace Geometry
             ValidateH(); 
         }
 
+       
         public override double GetArea()
         {
+            
             return B * H;
         }
 
+        
         public override double GetPerimeter()
         {
+            
             return 2 * (A + B);
         }
 
+        
         private void ValidateH()
         {
             if (H <= 0)
